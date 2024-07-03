@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Sequence Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        textarea, input {
+            width: 100%;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Sequence Generator</h1>
+    <textarea id="inputSequences" rows="10" placeholder="Enter sequences, comma separated, new line for each sequence..."></textarea>
+    <input type="number" id="sequenceLength" placeholder="Enter max sequence length" min="1">
+    <button onclick="generateSequence()">Generate Sequence</button>
+    <h2>Generated Sequence:</h2>
+    <p id="outputSequence"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
